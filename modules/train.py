@@ -14,7 +14,7 @@ def train_model(model,
           optimizer,
           EPOCHS,
           device):
-  for epoch in tqdm(range(1, EPOCHS+1)):
+  for epoch in tqdm(range(0, EPOCHS)):
 
 
     model.train()
