@@ -26,7 +26,7 @@ def create_model(num_classes:int):
   ])
 
   for param in model.parameters():
-    param.requires_grad = False
+    param.requires_grad = True
 
   model.classifier = nn.Sequential(
       nn.Linear(in_features=960, out_features=1280),
